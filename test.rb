@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'cairo'
 require 'pango'
 $: << 'x86_64-linux'
@@ -18,7 +19,7 @@ def grad_vl(y1,y2,col1=nil,col2=nil,&block)
 	pattern
 end
 
-width, height = 600, 600
+width, height = 500, 200
 
 surface = Cairo::ImageSurface.new(:argb32, width, height)
 cr = Cairo::Context.new(surface)
